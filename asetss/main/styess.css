@@ -1,0 +1,96 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body {
+    height: 100vh;
+    width: 100%;
+    font-family: sans-serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: linear-gradient(to top,rgba(0,0,0,0.8),rgba(0,0,0,0.7)),url(/asetss/img/cold.png) no-repeat center/cover;
+}
+
+#weather {
+    width: 350px;
+    border-radius: 15px;
+    background:url(/asetss/img/cold.png) center/cover ;
+    padding: 20px;
+}
+.hot {
+    background: linear-gradient(to top,rgba(0,0,0,0.8),rgba(0,0,0,0.7)),url(/asetss/img/hot.png) no-repeat center/cover;
+}
+.hot #weather {
+    background:url(/asetss/img/hot.png) center/cover ;  
+}
+.cold{
+    background: linear-gradient(to top,rgba(0,0,0,0.8),rgba(0,0,0,0.7)),url(/asetss/img/cold.png) no-repeat center/cover;
+}
+.cold #weather {
+    background:url(/asetss/img/cold.png) center/cover ;  
+}
+.search {
+    width: 100%;
+    padding: 10px 20px;
+    font-size: 20px;
+    border: none;
+    outline: none;
+    background: rgba(255, 255, 255, 0.3);
+    border-radius: 0 15px 0 15px;
+    box-shadow:0 5px 4px rgba(0,0,0,0.2);
+    transition: 0.4s;
+    margin-bottom: 40px;
+}
+.search:focus {
+    background: rgba(255, 255, 255, 0.7);
+    border-radius:  15px 0 15px 0;
+}
+.content {
+    text-align: center;
+    color: white;
+    transition: 0.4s;
+}
+.capital {
+    text-shadow: 2px 2px rgba(0, 0, 0, 0.5);
+}
+.time {
+    font-size: 12px;
+    text-shadow: 2px 2px rgba(0, 0, 0, 0.5);
+    margin: 7px 25px;
+}
+.tempunaturle {
+    font-size: 60px;
+    text-shadow: 2px 2px rgba(0, 0, 0, 0.5);
+    background: rgba(255, 255, 255, 0.4);
+    border-radius: 15px;
+    box-shadow: 6px 6px rgba(0, 0, 0, 0.5);
+    margin: 0 50px;
+    padding: 25px;
+}
+.sort-desc{
+    font-size: 40px;
+    font-weight: 600;
+    text-shadow: 2px 2px rgba(0, 0, 0, 0.5);
+    margin-top: 40px;
+}
+.more-desc {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 60px;
+
+}
+.more-desc div {
+   display: flex;
+   flex-direction: column;
+   margin-top: 30px;
+}
+.more-desc span{
+   margin-top: 10px;
+}
+.hide {
+    visibility: hidden;
+    opacity: 0;
+}
